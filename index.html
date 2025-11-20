@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo-lucas-icon.svg" />
     <link rel="stylesheet" href="styles.css">
-    <title>Justly</title>
+    <title>Portifolio</title>
 </head>
 
 <body>
@@ -13,17 +14,16 @@
     <header>
         <a href="./index.html">
             <div class="img-container">
-                <img class="logo" src="./assets/logo (3).png" alt="logo-img" />
-                <span class="logo-text">Justly</span>
+                <img class="logo" src="./assets/logo-lucas.png" alt="logo-img" />
+                <span class="logo-text">Lucas</span>
             </div>
         </a>
-        <nav>
+        <nav class="mobile-nav">
             <ul>
-                <li>Home</li>
-                <li>Pages</li>
-                <li>Attorneys</li>
-                <li>Practice Areas</li>
-                <li>Contact Us</li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
                 <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
             </ul>
         </nav>
@@ -31,240 +31,253 @@
         <i class="fa-solid fa-bars" id="menu-icon"></i>
     </header>
     <div class="modal"></div>
-    <div class="home-container">
+    <div id="home" class="home-container">
         <div class="presentation-container">
-            <h3> A Better Legal System</h3>
-            <h1>Welcome to <span>Justly Best</span> Lawyer Firm </h1>
-            <p> We are a best law firm in family & business industry. With more than 15 years of
-                experience in this area, so you can expect from ys better services.
+            <h3> Bem vindo ao meu perfil.</h3>
+            <h1>Meu nome é <span>Lucas</span>, estudante de tecnologia!</h1>
+            <p> Apaixonado por tecnologia, desenvolvi habilidades em programação, o que me levou a criar
+                projetos inovadores. Atualmente, estou focado em expandir meus conhecimentos em inteligência artificial
+                e desenvolvimento web, sempre buscando novas oportunidades para aprender e crescer na área de
+                tecnologia.
             </p>
-            <button>Read More</button>
+            <button><a href="#contato">Contate-me</a></button>
         </div>
     </div>
     <div class="destaks-container">
         <div class="destaks-content">
 
             <div class="content" id="square-1">
-                <i class="fa-regular fa-message"></i>
-                <span class="destaks-span"> Free Consultation</span>
+                <i class="fa-brands fa-html5"></i>
+                <span class="destaks-span"> HTML & CSS</span>
                 <div class="divider"></div>
                 <p class="destaks-paragraph">
-                    Our Lawyers will give
-                    you legal advice
+                    Base de toda página web, estrutura sólida e
+                    um design atraente.
                 </p>
             </div>
 
             <div class="content" id="square-2">
-                <i class="fa-solid fa-gavel fa-rotate-270" id="gavel-icon"></i>
-                <span class="destaks-span" id="destaks-span-gold"> Personal Lawyer</span>
+                <i class="fa-brands fa-js"></i>
+                <span class="destaks-span" id="destaks-span-gold"> JAVASCRIPT</span>
                 <div class="divider" id="divider-white"></div>
                 <p class="destaks-paragraph">
-                    Qualified attorney that
-                    you can trust
+                    Essencial para adicionar interatividade e dinamismo
+                    às páginas web.
                 </p>
             </div>
 
             <div class="content" id="square-3">
-                <i class="fa-regular fa-paste"></i>
-                <span class="destaks-span"> Expert Advice</span>
+                <i class="fa-brands fa-react"></i>
+                <span class="destaks-span"> REACT</span>
                 <div class="divider"></div>
                 <p class="destaks-paragraph">
-                    Lawyer helps you to make
-                    the best decision
+                    Biblioteca poderosa para construir interfaces
+                    de usuário modernas e responsivas.
                 </p>
             </div>
 
         </div>
     </div>
-    <section class="welcome-container">
+    <section id="sobre" class="welcome-container">
         <div class="signature-container">
             <div class="signature-content">
 
                 <div class="signature-text">
 
                     <div class="signature-title">
-                        <h5>WELCOME TO</h5>
-                        <h1> Justly Law firm</h1>
+                        <h5>UM POUCO SOBRE MIM</h5>
+                        <h1>Lucas</h1>
                     </div>
 
                     <span>
-                        By cooperating with over many Lawyers across the word our Law firm is leaders in providing
-                        quality Legal
-                        services.
+                        Programador com uma sólida experiência multi-disciplinar, especializado em desenvolvimento web e
+                        apaixonado por criar soluções inovadoras e eficientes.
                     </span>
 
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, tempora blanditiis
-                        inventore
-                        magnam maxime porro sunt culpa distinctio, eaque nobis eius id, minus impedit laborum autem!
-                        Minima
-                        nisi culpa iusto.
+                        Possuo habilidades em comunicação, liderança e resolução de problemas, caracteristicas
+                        que me permitem colaborar eficazmente em equipes e entregar resultados de alta qualidade.
+                        Sou movido por uma motivação extraordinária em aprender e evoluir, com uma capacidade de
+                        adaptação
+                        rápida que me ajuda a enfrentar desafios com confiança.Com uma visão inovadora busco integrar
+                        criatividade e eficiência em minhas soluções, somando minha bagagem profissional a minha paixão
+                        por tecnologia
+                        para agregar valor ao time e contribuir para o sucesso da empresa.
                     </p>
 
                     <div class="signature-button">
-                        <button>Read More</button>
-                        <img class="signature-img" src="./assets/signature.png" alt="assinatura" />
+                        <button id="btn-curriculo">Curriculo</button>
                     </div>
                 </div>
             </div>
 
-            <div class="attorney-container">
-                <img class="attorney-img" src="./assets/attorney.png" alt="imagem-advogado" />
+            <div class="programer-container">
+                <img class="programer-img" src="./assets/programador-image-removebg-preview.png"
+                    alt="imagem do programador" />
             </div>
 
         </div>
     </section>
-    <section class="services-container">
+    <section id="projetos" class="services-container">
         <div class="services-title">
-            <h2>OUR SERVICES</h2>
-            <h1>Practice Areas</h1>
+            <h2>MEUS TRABALHOS</h2>
+            <h1>Area de projetos</h1>
             <div class="services-divider" id="divider"></div>
         </div>
+        <div class="carousel">
+            <button class="prev">&#10094;</button>
 
-        <div class="services-content">
-            <div class="services-square" id="insurance">
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <div class="project-card">
+                        <img src="./assets/projeto-devburguer.png" alt="Imagem do projeto DevBurguer">
+                        <h3>DevBurguer</h3>
+                        <p>Plataforma completa para gestão de pedidos em uma hamburgueria. O usuário pode criar uma
+                            conta, realizar login,
+                            adicionar produtos ao carrinho, definir quantidades, visualizar ofertas e prosseguir para o
+                            pagamento.
+                            A área administrativa permite que gestores cadastrem e removam produtos, recebam pedidos e
+                            administrem todo o fluxo da loja.</p>
+                        <a href="https://github.com/lukas050490/front-end-devburger.git" target="_blank" class="btn">Ver
+                            no
+                            GitHub</a>
+                    </div>
 
-                <div class="services-icon">
-                    <i class="fa-solid fa-paste" id="service-icon"></i>
-                </div>
-                <div class="services-text">
-                    <h3 class="text">Insurance</h3>
-                    <span class="services-description">
-                        We regulary provide advice in insurance and crash assistance.
-                    </span>
+                    <div class="project-card">
+                        <img src="./assets/projeto-devbills.png" alt="Imagem do projeto DevBills">
+                        <h3>DevBills</h3>
+                        <p> Aplicação desenvolvida em TypeScript para gerenciar receitas e despesas, permitindo ao
+                            usuário acompanhar e organizar suas finanças pessoais de forma prática.
+                            Tecnologias utilizadas: Express, Docker, MongoDB, Zod, Aggregation Framework, Vite,
+                            Styled-Components, gráficos (Pie e Bar).</p>
+                        <a href="https://github.com/lukas050490/devbills-front.git" target="_blank" class="btn">Ver no
+                            GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/projeto-devflix.png" alt="Imagem do projeto DevFlix">
+                        <h3>DevFlix</h3>
+                        <p>Projeto que simula uma plataforma de streaming, disponibilizando opções de filmes, séries,
+                            trailers e informações sobre atores principais. Desenvolvido em React.</p>
+                        <a href="https://github.com/lukas050490/DevFlix-Project-React.git" target="_blank"
+                            class="btn">Ver no GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/elite-home.png" alt="Imagem do projeto EliteHome">
+                        <h3> Elite Home</h3>
+                        <p> O EliteHome foi desenvolvido para modernizar a experiência dos clientes na busca por imóveis
+                            e otimizar a
+                            rotina dos administradores no gerenciamento de propriedades e visitas.
+                            🛠️ Tecnologias Utilizadas
+                            Frontend: React + Vite, TailwindCSS, React Router DOM, Axios, Framer Motion, Lucide React
+                            Backend: Fastify, Knex.js, PostgreSQL, JWT, Bcrypt, Multer, Zod, Dotenv</p>
+                        <a href="https://github.com/lukas050490/EliteHome-Interface.git" target="_blank" class="btn">Ver
+                            no GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/caixa-restaurante.png"
+                            alt="Imagem do projeto Caixa Restaurante Universitário">
+                        <h3>Caixa Restaurante Universitário</h3>
+                        <p>Sistema de caixa criado para restaurantes universitários, onde é possível registrar vendas de
+                            refeições por aluno ou visitante.
+                            O sistema permite consultar histórico de vendas, excluir transações e emitir relatórios para
+                            fechamento diário.</p>
+                        <a href="https://github.com/lukas050490/Caixa-Restaurante.git" target="_blank" class="btn">Ver
+                            no GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/chat-financas.png" alt="Imagem do projeto Chat Finanças">
+                        <h3>Chat Finanças</h3>
+                        <p>Aplicação inteligente que auxilia o usuário na organização de suas finanças através de
+                            interação por chat.
+                            O sistema calcula balanços detalhados (lucro ou prejuízo) e fornece dicas personalizadas
+                            para melhorar a saúde financeira.
+                            🚀 Tecnologias Utilizadas
+                            🔧 Backend: Node.js com Express, Nodemon, API da OpenAI
+                            🎨 Frontend:React com Vite, TailwindCSS, Axios (API)</p>
+                        <a href="https://github.com/lukas050490/Interface-Chat-Financas.git" target="_blank"
+                            class="btn">Ver no GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/freelancer-home.png" alt="Imagem do projeto Freelancer">
+                        <h3> Freelancer</h3>
+                        <p>Aplicação voltada para profissionais autônomos e empreendedores, oferecendo gestão de
+                            clientes, projetos, tarefas e pagamentos.
+                            Com integração à OpenAI API, o sistema gera contratos, propostas e recibos personalizados de
+                            forma automática.
+                            🛠️ Tecnologias Utilizadas: TypeScript ,Vite, Tailwind CSS,OpenAI API.</p>
+                        <a href="https://github.com/lukas050490/Freelancer-Project-Front.git" target="_blank"
+                            class="btn">Ver no GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/petshop.png" alt="Imagem do projeto Petshop">
+                        <h3>PetShop</h3>
+                        <p>Plataforma de e-commerce para petshop, onde clientes podem se cadastrar,
+                            realizar login e acessar funcionalidades como visualização de produtos,
+                            categorias e ofertas. É possível adicionar itens ao carrinho, ajustar quantidades e
+                            finalizar a compra através da área de pagamento.</p>
+                        <a href="https://github.com/lukas050490/Petshop-Online.git" target="_blank" class="btn">Ver no
+                            GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/estoque.png" alt="Imagem do projeto Estoque">
+                        <h3>Estoque</h3>
+                        <p>Aplicação desenvolvida para controle de estoque em depósitos, ideal para lojas e pequenos
+                            comércios.
+                            O sistema permite cadastrar produtos,
+                            registrar entradas e saídas e emitir relatórios filtrados por data.
+                            🛠️ Tecnologias Utilizadas:
+                            🔙 Backend: Node.js,Express,Sequelize,PostgreSQL
+                            🔜 Frontend: React, Styled-Components, Axios, React Router DOM</p>
+                        <a href="https://github.com/lukas050490/estoque-app.git" target="_blank" class="btn">Ver no
+                            GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/projeto-user-node.png" alt="Imagem do projeto Usuários">
+                        <h3>Usuários</h3>
+                        <p>Aplicação que possibilita cadastrar usuários com nome, idade e e-mail,
+                            além de visualizar e excluir registros já efetuados. Desenvolvido em Node.js com MongoDB.
+                        </p>
+                        <a href="https://github.com/lukas050490/first-project-react.git" target="_blank" class="btn">Ver
+                            no GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/fotos-tasks.png" alt="Imagem do projeto Tarefas Diárias">
+                        <h3>Tarefas Diárias</h3>
+                        <p>Aplicação simples e intuitiva para gerenciamento de tarefas diárias,
+                            permitindo adicionar, excluir e marcar atividades como concluídas.</p>
+                        <a href="https://github.com/lukas050490/React-Project-Day-Tasks.git" target="_blank"
+                            class="btn">Ver no GitHub</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="services-square" id="bank-finantial">
-
-                <div class="services-icon">
-                    <i class="fa-solid fa-landmark" id="service-icon"></i>
-                </div>
-                <div class="services-text">
-                    <h3 class="text">Bank & Finantial</h3>
-                    <span class="services-description">
-                        Our corruption experts will prevent bank and finance fraud.
-                    </span>
-                </div>
-            </div>
-
-            <div class="services-square" id="civil-litigation">
-
-                <div class="services-icon">
-                    <i class="fa-solid fa-gavel" id="service-icon"></i>
-                </div>
-                <div class="services-text">
-                    <h3 class="text">Civil Litigation</h3>
-                    <span class="services-description">
-                        Our trusted team will help you with pre-trial procedures.
-                    </span>
-                </div>
-            </div>
-
-            <div class="services-square" id="family-law">
-
-                <div class="services-icon">
-                    <i class="fa-solid fa-book-bookmark" id="service-icon"></i>
-                </div>
-                <div class="services-text">
-                    <h3 class="text">Family Law</h3>
-                    <span class="services-description">
-                        We have extensive experience in family law and offer.
-                    </span>
-                </div>
-            </div>
-
-            <div class="services-square" id="business-law">
-
-                <div class="services-icon">
-                    <i class="fa-solid fa-scale-balanced" id="service-icon"></i>
-                </div>
-                <div class="services-text">
-                    <h3 class="text">Business Law</h3>
-                    <span class="services-description">
-                        Our experienced lawyers offer great advice in your business.
-                    </span>
-                </div>
-            </div>
-
-            <div class="services-square" id="criminal-law">
-
-                <div class="services-icon">
-                    <i class="fa-solid fa-handcuffs" id="service-icon"></i>
-                </div>
-                <div class="services-text">
-                    <h3 class="text">Criminal Law</h3>
-                    <span class="services-description">
-                        We provide legal assistance on matters of criminal law.
-                    </span>
-                </div>
-            </div>
-
+            <button class="next">&#10095;</button>
         </div>
     </section>
-    <section class="testimonials-container">
-        <div class="testimonials-title">
-            <h2>TESTIMONIALS</h2>
-            <H1>What Clients Say</H1>
-            <div class="services-divider" id="divider"></div>
-        </div>
-        <div class="testimonial-card">
 
-            <div class="cards" id="card-1">
-                <div class="testimonial-img" id="testimonial-1"></div>
-                <i class="fa-solid fa-quote-left" id="testimony-icon"></i>
-                <p class="testimony">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat quas praesentium,
-                    vel, harum similique
-                    velit eaque suscipit tempora dolore nisi sit. Laborum inventore est error quisquam accusamus optio
-                    reprehenderit?
-                </p>
-                <h2 class="testimony-name"> Donald Gray</h2>
-                <span class="testimony-profession">Busineesman</span>
-            </div>
-
-            <div class="cards" id="card-2">
-                <div class="testimonial-img" id="testimonial-2"></div>
-                <i class="fa-solid fa-quote-left" id="testimony-icon"></i>
-                <p class="testimony">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat quas praesentium,
-                    vel, harum similique
-                    velit eaque suscipit tempora dolore nisi sit. Laborum inventore est error quisquam accusamus optio
-                    reprehenderit?
-                </p>
-                <h2 class="testimony-name"> Joseph Brooks</h2>
-                <span class="testimony-profession">Busineesman</span>
-            </div>
-
-            <div class="cards" id="card-3">
-                <div class="testimonial-img" id="testimonial-3"></div>
-                <i class="fa-solid fa-quote-left" id="testimony-icon"></i>
-                <p class="testimony">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat quas praesentium,
-                    vel, harum similique
-                    velit eaque suscipit tempora dolore nisi sit. Laborum inventore est error quisquam accusamus optio
-                    reprehenderit?
-                </p>
-                <h2 class="testimony-name"> Shayna Hicks</h2>
-                <span class="testimony-profession">Busineesman</span>
-            </div>
-
-        </div>
-    </section>
-    <section class="form-container">
+    <section id="contato" class="form-container">
         <div class="form-img"></div>
         <div class="form-content">
 
             <div class="form-title">
-                <h2>REQUEST A QUOTE</h2>
-                <h1>Free Consultation</h1>
+                <h2>Vamos Conversar</h2>
                 <div class="services-divider" id="divider"></div>
             </div>
 
             <p class="form-description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque iste veniam nesciunt natus quod
-                accusantium vitae facere pariatur. Sapiente,
-                repudiandae delectus totam nam quas rem aspernatur laboriosam iure quia. Eaque!
+                Este espaço é dedicado para você entrar em contato comigo. Seja para discutir
+                oportunidades de colaboração, tirar dúvidas sobre meus projetos ou simplesmente
+                para dizer olá, estou aqui para ouvir você. Preencha o formulário abaixo e
+                responderei o mais breve possível.
             </p>
 
             <div class="form-inputs">
@@ -298,59 +311,51 @@
     <footer>
         <div class="footer-content">
             <div class="about-text">
-                <h2>ABOUTS US</h2>
+                <h2>Enfim espero que tenham gostado.</h2>
                 <P>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corrupti porro natus iste debitis
-                    laborum consequuntur
-                    quasi ex nesciunt aliquid recusandae, totam illum modi dolorum adipisci libero ad odio soluta?
+                    Sinta-se à vontade para explorar meus projetos e entrar em contato para
+                    discutir oportunidades de colaboração. Agradeço por visitar meu perfil!
                 </P>
                 <div class="social-media">
-                    <i class="fa-brands fa-facebook-f" id="facebook-icon"></i>
-                    <i class="fa-brands fa-telegram" id="telegram-icon"></i>
-                    <i class="fa-brands fa-linkedin-in" id="likedin-icon"></i>
-                    <i class="fa-brands fa-instagram" id="instagram-icon"></i>
-                    <i class="fa-brands fa-youtube" id="youtube-icon"></i>
+                    <a href="https://www.github.com/lukas050490" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github" id="github-icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-alexandre-silva05/" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in" id="likedin-icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lucasalexandre05" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram" id="instagram-icon"></i>
+                    </a>
                 </div>
             </div>
             <div class="theme-post">
-                <h2>THEME POSTS</h2>
+                <h2>CONTATOS</h2>
 
                 <div class="posts" id="post-1">
-                    <img src="./assets/post-1.jpg" alt="post-img" class="post-img" />
+                    <img src="./assets/whatsapp.png" alt="post-img" class="post-whatsapp" />
                     <div class="post-content">
                         <p>
-                            Judicial Review of New Laws in Employment Law.
+                            Celular: (32) 9 9880-6583
                         </p>
-                        <div class="post-date">
-                            <i class="fa-regular fa-clock" id="clock-icon"></i>
-                            <span>Jan 03, 2025</span>
-                        </div>
                     </div>
                 </div>
 
                 <div class="posts" id="post-2">
-                    <img src="./assets/post-2.jpg" alt="post-img" class="post-img" />
+                    <img src="./assets/email.png" alt="post-img" class="post-email" />
                     <div class="post-content">
                         <p>
-                            Speak Directly With An Insurer in Case of Car Accidents.
+                            E-mail: lucas_alexandre05@hotmail.com
                         </p>
-                        <div class="post-date">
-                            <i class="fa-regular fa-clock" id="clock-icon"></i>
-                            <span>Jan 03, 2025</span>
-                        </div>
                     </div>
                 </div>
 
                 <div class="posts" id="post-3">
-                    <img src="./assets/post-3.jpg" alt="post-img" class="post-img" />
+                    <img src="./assets/linkedin.png" alt="post-img" class="post-linkedin" />
                     <div class="post-content">
                         <p>
-                            Listen to your Lawyers - They Will give You Advices.
+                            Linkedin: https://www.linkedin.com/in/lucas-alexandre-silva05/
                         </p>
-                        <div class="post-date">
-                            <i class="fa-regular fa-clock" id="clock-icon"></i>
-                            <span>Jan 03, 2025</span>
-                        </div>
                     </div>
                 </div>
 
@@ -359,10 +364,15 @@
     </footer>
 
     <div class="copyright">
-        <span>&copy; JUSTLY 2025</span>
+        <span>&copy; LUCAS PROFILE 2025</span>
     </div>
 
     <script src="https://kit.fontawesome.com/42c5638656.js" crossorigin="anonymous"></script>
 </body>
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+
 
 </html>
